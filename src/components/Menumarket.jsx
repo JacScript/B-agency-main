@@ -2,7 +2,7 @@ import React from 'react'
 
 const Menumarket = () => {
   return (
-    <div className="w-4/5 mx-auto px-24 h-96 flex justify-between items-center">
+    <div className="w-4/5 mx-auto px-24 md:h-96 md:flex md:flex-row md:mt-0 mt-12 justify-between items-center flex flex-col">
       <div className="w-40 h-56 ">
         <a className="cursor-pointer">
           <img

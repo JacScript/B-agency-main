@@ -7,7 +7,7 @@ const ContainerMarket = () => {
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
-    <div className="max-w-screen-2xl h-screen bg-banner-pattern bg-cover">
+    <div className="max-w-screen-2xl md:h-screen bg-banner-pattern bg-cover">
       <div className=" md:relative px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-full bg-gradient-to-br from-green-950 to-tranparent">
         <div className="mt-20 text-center">
           <h1 className="text-white text-4xl uppercase font-semibold pt-12">
@@ -15,8 +15,8 @@ const ContainerMarket = () => {
           </h1>
         </div>
 
-        <div className="md:w-4/5 w-full md:mx-auto lg:flex  grid grid-cols-2 gap-4 px-12 md:px-24 lg:px-0 lg:justify-around items-center h-48 pt-4 border-b-2 border-brandPrimary">
-          <div>
+        <div className="md:w-4/5 w-full md:mx-auto lg:flex  grid grid-cols-2 gap-4 md:px-24 lg:px-0 lg:justify-around items-center h-48 pt-4 border-b-2 border-brandPrimary">
+          <div className="ml-6">
             <button
               className="btn-primary flex items-center px-12"
               onClick={handleClick}
@@ -42,7 +42,7 @@ const ContainerMarket = () => {
               Grains
             </button>
           </div>
-          <div>
+          <div className="ml-6">
             <button
               className="btn-primary flex items-center px-12"
               onClick={handleClick}
