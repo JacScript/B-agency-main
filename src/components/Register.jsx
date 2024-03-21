@@ -93,6 +93,7 @@ const Register = () => {
                   type="text"
                   id="fname"
                   name="fname"
+                  required="required"
                   placeholder="Company VAT*"
                   className="text-black py-1 w-48 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none"
                 />
@@ -101,6 +102,7 @@ const Register = () => {
                   type="text"
                   id="lname"
                   name="lname"
+                  required="required"
                   placeholder="phone number*"
                   className="text-black py-1 w-48 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none"
                 />
@@ -112,6 +114,7 @@ const Register = () => {
                 type="text"
                 id="company"
                 name="company"
+                required="required"
                 placeholder="Company"
                 className="text-black py-1 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none w-full"
               />
@@ -121,13 +124,14 @@ const Register = () => {
               <div className="w-full flex justify-between">
                 <input
                   type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="Company VAT*"
+                  id="z-code"
+                  name="z-code"
+                  required="required"
+                  placeholder="Zip Code*"
                   className="text-black py-1 w-48 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none"
                 />
 
-                <select className="text-black py-1 w-48 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none" id="country" name="country">
+                <select className="text-black py-1 w-48 bg-transparent rounded-lg border-slate-200 outline-none focus-outline-none" id="country" name="country" required="required">
                 <option className="">Country*</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
@@ -393,10 +397,23 @@ const Register = () => {
               </div>
             </div>
 
-            <div>
-              
-            </div>
+            <div className="my-6 px-10 w-full">
+            <select className="rounded-lg w-full" required="required" name="user[company_activity_id]" id="user_company_activity_id"><option value="">Company Activity</option>
+                <option value="1">Farming Production</option>
+                <option value="2">Imports/Exports</option>
+                <option value="3">Food industry</option>
+                <option value="4">Retail</option></select>
           </div>
+
+          <div className="my-6 px-10 w-full">
+            <select className="w-full rounded-lg" name="user[preferred_language]" id="user_preferred_language"><option selected="selected" value="en">English (EN)</option>
+                <option value="pt">Portuguese (PT)</option>
+                <option value="es">Spanish (ES)</option>
+                <option value="fr">French (FR)</option></select>
+        </div>
+
+          </div>
+
           <div className="w-1/2 h-full bg-green-950"></div>
         </form>
       </div>
