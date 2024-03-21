@@ -5,13 +5,15 @@ import Market from './pages/Market.jsx';
 
 
 import './App.css'
+import SignUp from './pages/SignUp.jsx';
 
 function App() {
     
   return (
     <>
       {/* <Home/> */}
-      <Market/>
+      {/* <Market/> */}
+      <SignUp/>
     </>
   )
 }
