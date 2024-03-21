@@ -17,7 +17,7 @@ const Register = () => {
         </div>
 
         <form className="w-full h-full flex">
-          <div className="w-1/2 h-full">
+          <div className="w-1/2 h-full border-r-2 border-slate-200">
             <div className="bg-white w-full px-10 ">
               <div>
                 <p className="my-2">I am*</p>
@@ -414,7 +414,214 @@ const Register = () => {
 
           </div>
 
-          <div className="w-1/2 h-full bg-green-950"></div>
+          <div className="w-1/2 h-full">
+          <div className="bg-white w-full px-10 ">
+              <div>
+                <p className="my-2">I am*</p>
+              </div>
+              <div className="grid grid-cols-3 justify-between border-y-2 divide-slate-200 py-4">
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value="BUYER AND SELLER"
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value=""
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value="BUYER AND SELLER"
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value="BUYER AND SELLER"
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value="BUYER AND SELLER"
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="Buyer"
+                    name="reason"
+                    value="BUYER"
+                  />
+                  <label for="html">Buyer</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="checkbox"
+                    id="seller"
+                    name="reason"
+                    value="SELLER"
+                  />
+                  <label for="html">Seller</label>
+                </div>
+
+                <div className="flex items-center">
+                  <input
+                    className="mr-2"
+                    type="chechbox"
+                    id="both"
+                    name="reason"
+                    value="BUYER AND SELLER"
+                  />
+                  <label for="html">Both</label>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </div>
