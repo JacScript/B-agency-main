@@ -16,8 +16,8 @@ const Register = () => {
           </p>
         </div>
 
-        <form className="w-full h-full flex">
-          <div className="w-1/2 h-full border-r-2 border-slate-200">
+        <form className="w-full h-full flex flex-col lg:flex-row ">
+          <div className="w-full lg:w-1/2 lg:h-full border-r-2 border-slate-200">
             <div className="bg-white w-full px-10 ">
               <div>
                 <p className="my-2">I am*</p>
@@ -435,12 +435,12 @@ const Register = () => {
             </div>
           </div>
 
-          <div className="w-1/2 h-full">
+          <div className="md:w-1/2 md:h-full">
             <div className="bg-white w-full px-10 ">
               <div>
                 <p className="my-2">Preferred Product(s)</p>
               </div>
-              <div className="grid grid-cols-3 justify-between gap-6 border-y-2 divide-slate-200 py-4">
+              <div className="grid grid-cols-3 justify-between gap-2 border-y-2 divide-slate-200 py-4">
                 <div className="flex items-center">
                   <input
                     className="mr-2"
@@ -622,7 +622,7 @@ const Register = () => {
               <div className="my-6">
                 <input
                   className="w-full rounded-lg"
-                  class="form-control"
+                  value=""
                   type="text"
                   name="user[other_preferred_products]"
                   id="user_other_preferred_products"
@@ -646,7 +646,6 @@ const Register = () => {
                 <input
                   className="w-full rounded-lg"
                   autocomplete="off"
-                  class="form-control"
                   required="required"
                   type="password"
                   name="user[password]"
@@ -659,7 +658,6 @@ const Register = () => {
                 <input
                   className="w-full rounded-lg"
                   autocomplete="off"
-                  class="form-control"
                   required="required"
                   type="password"
                   name="user[password_confirmation]"
@@ -706,15 +704,15 @@ const Register = () => {
                 </label>
               </div>
 
-              <div className="">
+              <div className="w-full my-4 pb-4">
                 <button
+                  className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey w-full"
                   type="submit"
                   name="commit"
                   value="Sign Up"
-                  className="btn-primary"
                   data-disable-with="Sign Up"
                 >
-                  Sign Up{" "}
+                  Sign Up
                 </button>
               </div>
             </div>
