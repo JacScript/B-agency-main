@@ -631,15 +631,8 @@ const Register = () => {
               </div>
 
               <div className="my-6">
-                <input
-                  className="w-full rounded-lg"
-                  required="required"
-                  type="email"
-                  value=""
-                  name="user[email]"
-                  id="user_email"
-                  placeholder="Email"
-                />
+              import logo from '../../src/assets/logo.png';
+
               </div>
 
               <div className="my-6">

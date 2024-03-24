@@ -1,11 +1,12 @@
 import React from 'react';
 import Home from './pages/Home.jsx';
 import Market from './pages/Market.jsx';
+import SignUp from './pages/SignUp.jsx';
+import LogIn from './pages/LogIn.jsx';
 
 
 
 import './App.css'
-import SignUp from './pages/SignUp.jsx';
 
 function App() {
     
@@ -13,7 +14,8 @@ function App() {
     <>
       {/* <Home/> */}
       {/* <Market/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
+      <LogIn/>
     </>
   )
 }

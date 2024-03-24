@@ -16,6 +16,7 @@ export default {
       },
       backgroundImage: {
         'banner-pattern': "url('/src/assets/bggrains.jpg')",
+        'login-background':'url("/src/assets/bglogin2.jpg")'
       }
     },
   },
