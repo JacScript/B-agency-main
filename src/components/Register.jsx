@@ -17,7 +17,7 @@ const Register = () => {
         </div>
 
         <form className="w-full h-full flex flex-col lg:flex-row ">
-          <div className="w-full lg:w-1/2 lg:h-full border-r-2 border-slate-200">
+          <div className="w-full lg:w-1/2 lg:h-full lg:border-r-2 lg:border-slate-200">
             <div className="bg-white w-full px-10 ">
               <div>
                 <p className="my-2">I am*</p>
@@ -435,7 +435,7 @@ const Register = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2 md:h-full">
+          <div className="lg:w-1/2 lg:h-full">
             <div className="bg-white w-full px-10 ">
               <div>
                 <p className="my-2">Preferred Product(s)</p>
