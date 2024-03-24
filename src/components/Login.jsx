@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 const Login = () => {
   return (
     <div className="max-w-screen-2xl h-screen bg-login-background bg-cover">
-      <div className="w-2/5 mx-auto h-full shadow-2xl brightness-105 bg-white">
+      <div className="md:w-3/5 lg:w-2/5 mx-auto h-full shadow-2xl brightness-105 bg-white">
         <div className="flex flex-col justify-center items-center">
           <div className="w-40 h-40 mx-auto">
             <img src={logo} alt="" />
