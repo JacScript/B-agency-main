@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../src/assets/logo.png";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   return (
@@ -19,42 +20,71 @@ const Login = () => {
               Login
             </h1>
           </div>
-          <div className="w-4/5">
-            <div className="p-8">
-              <input
-                className="w-full rounded-lg"
-                autocomplete="off"
-                required="required"
-                type="password"
-                name="user[password]"
-                id="user_password"
-                placeholder="Email"
-              />
-            </div>
-            <div className="px-8 pb-8">
-              <input
-                className="w-full rounded-lg"
-                autocomplete="off"
-                required="required"
-                type="password"
-                name="user[password]"
-                id="user_password"
-                placeholder="Password"
-              />
-            </div>
 
-            <div className="w-full px-8 pb-4">
-              <button
-                className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey w-full"
-                type="submit"
-                name="commit"
-                value="Sign Up"
-                data-disable-with="Sign Up"
-              >
-                Sign Up
-              </button>
-            </div>
+          <div className="w-4/5">
+                <div className="p-8">
+                  <input
+                    className="w-full rounded-lg"
+                    autocomplete="off"
+                    required="required"
+                    type="password"
+                    name="user[password]"
+                    id="user_password"
+                    placeholder="Email"
+                  />
+                </div>
+                
+                <div className="px-8 pb-8">
+                  <input
+                    className="w-full rounded-lg"
+                    autocomplete="off"
+                    required="required"
+                    type="password"
+                    name="user[password]"
+                    id="user_password"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <div className="w-full px-8 pb-4">
+                  <button
+                    className="bg-brandPrimary text-white py-2 px-4 transition-all duration-300 rounded hover:bg-neutralDGrey w-full"
+                    type="submit"
+                    name="commit"
+                    value="Sign Up"
+                    data-disable-with="Sign Up"
+                  >
+                    Sign Up
+                  </button>
+                </div>    
+
+                <div className="px-8 flex items-center justify-center relative ">
+                  <div className="w-full mt-1 h-[1px] bg-slate-500"></div>
+                  <p className="absolute bg-white px-2 font-bold">or</p>
+                  </div> 
+
+                   <div className="w-full px-8 py-4">
+                  <button
+                    className="bg-neutralDGrey shadow-2xl text-brandPrimary py-2 px-4 transition-all duration-300 rounded hover:bg-brandPrimary hover:text-white w-full flex items-center justify-center"
+                    type="submit"
+                    name="commit"
+                    value="Sign Up"
+                    data-disable-with="Sign Up"
+                  >
+                   <span className="mr-4"> <FcGoogle /></span>
+                    <span>Log in with Google</span>
+                  </button>
+                </div>  
+                 
+                 <div className="text-xs">
+                   <p className="text-center "><a className="cursor-pointer text-brandPrimary" href="">Forget your password?</a></p>
+
+                   <p className="text-center py-2"><a className="cursor-pointer text-brandPrimary" href="">Not registered yet? Sign up</a></p>
+
+                   <p className="text-center"><a className="cursor-pointer text-brandPrimary" href="">Didn't receive confirmation instructions?</a></p>
+                 </div>
           </div>
+
         </div>
       </div>
     </div>
