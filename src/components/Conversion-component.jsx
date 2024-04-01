@@ -130,15 +130,15 @@ const Conversion = () => {
               </div>
             </div>
 
-            <div className="w-full mt-4 md:mt-0 flex flex-col bg-red-700 md:flex-row md:ml-8 md:w-1/2">
+            <div className="w-full mt-4 md:mt-0 flex flex-col md:flex-row md:ml-8 md:w-1/2">
               <div className="w-full h-full flex flex-col md:flex-row justify-between">
                 <div className="w-full md:w-2/5 flex justify-center md:justify-between items-center">Unit</div>
                 <div className="w-full md:w-3/5 flex justify-between ">
-                  <div className="w-full  md:w-1/2">
+                  <div className="w-full max-md:mt-2 md:w-1/2">
                     <select
                       name="unit-calculations"
                       id="unit-calculations"
-                      className="rounded-lg max-md:w-4/5"
+                      className="rounded-lg max-md:w-5/6 max-sm:ml-8 max-md:ml-[2.9rem]"
                     >
                       <option value="001">Metric Ton</option>
                       <option value="001">Pound</option>
@@ -150,10 +150,10 @@ const Conversion = () => {
             </div>
           </div>
 
-          <div className="flex items-center w-full mt-4">
+          <div className="flex max-md:flex-col items-center w-full mt-4">
             <div className="mr-4 w-1/6 h-full">Total Price </div>
 
-            <div className="w-5/6">
+            <div className="w-5/6 max-md:mt-2">
             <input
                   type="number"
                   name="calculated-price"
