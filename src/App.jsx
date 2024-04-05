@@ -8,6 +8,7 @@ import LogIn from './pages/LogIn.jsx';
 
 import './App.css'
 import Converter from './pages/Converter.jsx';
+import Item from './pages/Item.jsx';
 
 function App() {
     
@@ -17,7 +18,8 @@ function App() {
       {/* <Market/> */}
       {/* <SignUp/> */}
       {/* <LogIn/> */}
-      <Converter/>
+      {/* <Converter/> */}
+      <Item/>
     </>
   )
 }
