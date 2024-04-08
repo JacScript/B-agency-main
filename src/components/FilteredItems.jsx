@@ -5,13 +5,13 @@ import maize from '../assets/corn.jpg';
 const FilteredItems = () => {
   return (
     <div className="mt-[4.6rem] max-w-screen-2xl">
-      <div className="w-5/6 mx-auto mt-24 flex">
+      <div className="w-5/6 mx-auto mt-24 flex ">
         <div className="w-1/4 mt-12 flex flex-col">
           <div className="kode-mono text-2xl font-extrabold uppercase">
             <h1>Characteristics</h1>
           </div>
 
-          <div className="flex flex-col bg-slate-400">
+          <div className="flex flex-col bg-slate-400 pb-12">
             <div className="h-20 w-full flex items-center">
               <div>
                 <img
@@ -26,6 +26,8 @@ const FilteredItems = () => {
                 </h2>
               </div>
             </div>
+
+            
             <form>
               <div className="bg-yellow-500">
                 <div className="mx-2">
