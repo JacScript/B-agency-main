@@ -27,7 +27,6 @@ const FilteredItems = () => {
               </div>
             </div>
 
-            
             <form>
               <div className="bg-yellow-500">
                 <div className="mx-2">
@@ -248,7 +247,6 @@ const FilteredItems = () => {
                     </div>
                   </div>
 
-
                   <div className="mt-4 mx-2">
                     <div className="flex flex-col">
                       <label className="text-center mb-1" for="name">
@@ -262,7 +260,6 @@ const FilteredItems = () => {
                       />
                     </div>
                   </div>
-
 
                   <div className="mt-4 mx-2">
                     <div className="flex flex-col">
@@ -305,9 +302,86 @@ const FilteredItems = () => {
                       />
                     </div>
                   </div>
-
-
                 </div>
+
+                <div className="mx-auto mt-4 w-[95%]">
+                  <div className="flex flex-col w-full">
+                    <label className="text-center" for="ppt">
+                      Price per weight unit(€)
+                    </label>{" "}
+                    <div className="flex mt-2">
+                      <div className="w-28">
+                        <input
+                          type="text"
+                          name="interval[price_per_ton][start]"
+                          id="interval_price_per_ton_start"
+                          className="w-full rounded-lg"
+                          step="any"
+                        />
+                      </div>
+
+                      <div className="w-12 flex items-center justify-center">
+                        <p className="">to</p>
+                      </div>
+
+                      <div className="w-28">
+                        <input
+                          type="text"
+                          name="interval[price_per_ton][end]"
+                          id="interval_price_per_ton_end"
+                          className="w-full rounded-lg"
+                          step="any"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mx-auto mt-4 w-[95%]">
+                  <div className="">
+
+                    <div>
+                    <label className="" for="weight">
+                      Total Weight
+                    </label>{" "}
+                    </div>
+                    
+                    <div className='flex'>
+
+                    <div className=''>
+                    <input
+                      type="text"
+                      name="interval[total_weight][start]"
+                      id="interval_total_weight_start"
+                      className=""
+                      step="any"
+                    />
+                    </div>
+
+
+                    <div>
+                    <span>to</span>
+                   
+                    </div>
+
+
+                    <div> 
+                      <input
+                      type="text"
+                      name="interval[total_weight][end]"
+                      id="interval_total_weight_end"
+                      className=""
+                      step="any"
+                    /></div>
+
+                    
+                    
+
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
             </form>
           </div>
