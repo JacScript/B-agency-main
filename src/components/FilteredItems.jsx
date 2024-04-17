@@ -8,10 +8,10 @@ const FilteredItems = () => {
       <div className="w-5/6 mx-auto mt-24 flex ">
         <div className="w-1/4 mt-12 flex flex-col">
           <div className="kode-mono text-2xl font-extrabold uppercase">
-            <h1>Characteristics</h1>
+            <h1 className='text-center'>Characteristics</h1>
           </div>
 
-          <div className="flex flex-col bg-slate-400 pb-12">
+          <div className="flex flex-col bg-slate-400 pb-12 ">
             <div className="h-20 w-full flex items-center">
               <div>
                 <img
@@ -813,7 +813,11 @@ const FilteredItems = () => {
                     <label className="text-center" for="country">
                       Country of Origin
                     </label>
-                    <select className="w-full rounded-l mt-1" name="country[]" id="country_">
+                    <select
+                      className="w-full rounded-l mt-1"
+                      name="country[]"
+                      id="country_"
+                    >
                       <option value="">All</option>
                       <option value="AF">Afghanistan</option>
                       <option value="AX">Åland Islands</option>
@@ -1089,8 +1093,22 @@ const FilteredItems = () => {
                       <option value="ZM">Zambia</option>
                       <option value="ZW">Zimbabwe</option>
                     </select>
-
                   </div>
+                </div>
+
+                <div className='mx-2 mt-4 flex items-center'>
+                  <label for="immediate_delivery">Immediate Delivery</label>
+                  <input
+                    type="checkbox"
+                    id="immediate_delivery"
+                    value="immediate_delivery"
+                    className='ml-4 rounded-md'
+                  />
+                </div>
+
+                <div className='flex justify-between mx-2 mt-4'>
+                   <div> <button className='btn-primary mr-4 text-xs p-4'> Search</button></div>
+                   <div> <button className='btn-primary p-4 text-xs bg-neutralDGrey hover:bg-brandPrimary'>Clear</button></div>
                 </div>
 
               </div>
