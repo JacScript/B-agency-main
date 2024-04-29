@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import maize from '../assets/corn.jpg';
+import maize from "../assets/corn.jpg";
 
 const FilteredItems = () => {
   return (
@@ -8,10 +8,10 @@ const FilteredItems = () => {
       <div className="w-5/6 mx-auto mt-24 flex ">
         <div className="w-1/4 mt-12 flex flex-col">
           <div className="kode-mono text-2xl font-extrabold uppercase">
-            <h1 className='text-center'>Characteristics</h1>
+            <h1 className="text-center">Characteristics</h1>
           </div>
 
-          <div className="flex flex-col bg-slate-400 pb-12 ">
+          <div className="flex flex-col bg-slate-300 pb-12 ">
             <div className="h-20 w-full flex items-center">
               <div>
                 <img
@@ -1096,30 +1096,81 @@ const FilteredItems = () => {
                   </div>
                 </div>
 
-                <div className='mx-2 mt-4 flex items-center'>
+                <div className="mx-2 mt-4 flex items-center">
                   <label for="immediate_delivery">Immediate Delivery</label>
                   <input
                     type="checkbox"
                     id="immediate_delivery"
                     value="immediate_delivery"
-                    className='ml-4 rounded-md'
+                    className="ml-4 rounded-md"
                   />
                 </div>
 
-                <div className='flex justify-between mx-2 mt-4'>
-                   <div> <button className='btn-primary mr-4 text-xs p-4'> Search</button></div>
-                   <div> <button className='btn-primary p-4 text-xs bg-neutralDGrey hover:bg-brandPrimary'>Clear</button></div>
+                <div className="flex justify-between mx-2 mt-4">
+                  <div>
+                    {" "}
+                    <button className="btn-primary mr-4 text-xs p-4">
+                      {" "}
+                      Search
+                    </button>
+                  </div>
+                  <div>
+                    {" "}
+                    <button className="btn-primary p-4 text-xs bg-neutralDGrey hover:bg-brandPrimary">
+                      Clear
+                    </button>
+                  </div>
                 </div>
-
               </div>
             </form>
           </div>
         </div>
 
-        <div className="w-3/4 bg-yellow-300"></div>
+        <div className="w-3/4 ml-4 mt-12 ">
+          <div>
+            <div className="flex justify-between items-center">
+              <div className="kode-mono text-2xl font-extrabold">
+                <h1>ORDER BOARD</h1>
+              </div>
+              <div className="">
+                <button className="btn-primary bg-red-800 p-1">
+                  Add new order
+                </button>
+              </div>
+            </div>
+            <div className="w-full bg-slate-200 ">
+              <div className="w-full h-20 flex items-center justify-between">
+                <div className="ml-6">
+                  <p>Result</p>
+                </div>
+                <div className=" mr-6 flex items-center">
+                  <div>
+                    <p>show</p>
+                  </div>
+                  <div className="mx-2">
+                    {" "}
+                    <select
+                      name="lines__per__page"
+                      id="lines"
+                      className="w-full p-1 rounded-lg "
+                    >
+                      <option value="">10</option>
+                      <option value="444">15</option>
+                      <option value="445">20</option>
+                      <option value="446">25</option>
+                      <option value="447">30</option>
+                      <option value="448">35 </option>
+                    </select>
+                  </div>
+                  <div>Lines Per Page</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default FilteredItems
+export default FilteredItems;
