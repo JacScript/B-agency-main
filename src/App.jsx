@@ -14,12 +14,12 @@ function App() {
     
   return (
     <>
-      {/* <Home/> */}
+      <Home/>
       {/* <Market/> */}
       {/* <SignUp/> */}
       {/* <LogIn/> */}
       {/* <Converter/> */}
-      <Item/>
+      {/* <Item/> */}
     </>
   )
 }

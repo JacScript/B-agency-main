@@ -22,7 +22,7 @@ const Feature = () => {
     ]
 
   return (
-    <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-12' id='faq'>
+    <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-12' id='features'>
         <div className='text-center md:w-1/2 mx-auto'>
             <h2 className='text-5xl text-neutralDGrey font-semibold uppercase kode-mono mb-4'> key features</h2>
             <p className='md:w-3/4 mx-auto text-sm text-neutralGrey mb-8'>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.</p>

@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const About = () => {
+const Works = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto lg:h-full mt-24 " id="about">
+    <div className="max-w-screen-2xl mx-auto lg:h-full mt-24 " id="works">
       <div className='w-full lg:w-4/5 lg:mx-auto lg:h-full lg:flex'>
            <div className='w-full lg:mx-0 lg:w-1/2 lg:h-full'>
             <div className='w-full'>
@@ -33,4 +33,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Works
