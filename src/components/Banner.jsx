@@ -55,11 +55,11 @@ const Banner = () => {
 
                <div className="mt-12 w-full h-72 absolute inset-0 px-8 gap-12 grid grid-cols-3 font-neutralGrey sm:max-lg:mt-8 sm:max-lg:grid sm:max-2xl:grid-cols-2">
 
-               {data.items.map((item, id) => (
+               {data.collections.map((collection, id) => (
                   <MenuItem
-                    key={item.id}
-                    title={item.title}
-                    imgUrl={item.imgUrl}
+                    key={collection.id}
+                    title={collection.title}
+                    imageUrl={collection.imageUrl}
                   />
                 ))
                }

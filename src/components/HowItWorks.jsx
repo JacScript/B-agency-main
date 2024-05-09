@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Works = () => {
+const HowItWorks = () => {
   return (
     <div className="max-w-screen-2xl mx-auto lg:h-full mt-24 " id="works">
       <div className='w-full lg:w-4/5 lg:mx-auto lg:h-full lg:flex'>
@@ -33,4 +33,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default HowItWorks

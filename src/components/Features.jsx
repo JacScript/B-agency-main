@@ -1,25 +1,26 @@
 import React from 'react'
+import { data } from '../constants'
 
 const Feature = () => {
-    const features = [
-        {  id: 1,
-           title: "Direct transactions between farmers and industry/retail",
-           image:"/src/assets/blog1.jpg",
-           heading: "transparency"
-          },
-          {
-            id: 2,
-            title: "Redistribution of value in food supply chain",
-            image:"/src/assets/blog2.jpg",
-            heading: "fairtrade"
-          },
-          {
-            id: 3,
-            title: "Reduce costs to buyers without losing reliability",
-            image:"/src/assets/blog3.jpg",
-            heading: "User friendly"
-          }
-    ]
+    // const features = [
+    //     {  id: 1,
+    //        title: "Direct transactions between farmers and industry/retail",
+    //        image:"/src/assets/blog1.jpg",
+    //        heading: "transparency"
+    //       },
+    //       {
+    //         id: 2,
+    //         title: "Redistribution of value in food supply chain",
+    //         image:"/src/assets/blog2.jpg",
+    //         heading: "fairtrade"
+    //       },
+    //       {
+    //         id: 3,
+    //         title: "Reduce costs to buyers without losing reliability",
+    //         image:"/src/assets/blog3.jpg",
+    //         heading: "User friendly"
+    //       }
+    // ]
 
   return (
     <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-12' id='features'>
@@ -31,7 +32,7 @@ const Feature = () => {
         {/* all blogs */}
         <div className='grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-8 items-center justify-between'>
             {
-                features.map( feature => <div key={feature.id} className='mx-auto relative mb-12'>
+                data.features.map( feature => <div key={feature.id} className='mx-auto relative mb-12'>
                     <img src={feature.image} alt="" className='hover:scale-95 transition-all duration-300'/>
                     <div className='text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12'>
                          <h3 className='mb-3 text-neutralGrey font-semibold'>{feature.title}</h3> 
