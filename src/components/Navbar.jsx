@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'; 
+// import { Link } from 'react-scroll';
 import logo from '../../src/assets/logo.png';
 import Button from './Button'
 
@@ -36,13 +37,16 @@ const Navbar = () => {
  
     //navItems array
     const navItems = [
-      {link:'Home',path: 'home'},
-      {link:'Our Solution',path: 'solution'},
-      {link:'How It Works',path: 'works'},
-      {link:'Get started',path: 'start'},
-      {link:'Services',path: 'services'},
-      {link:'Features',path: 'features'},
+      {link:'Home',path: '/'},
+      {link: 'Market', path: '/market'},
+      {link: 'Converter', path: '/converter'}
+      // {link:'Our Solution',path: 'solution'},
+      // {link:'How It Works',path: 'works'},
+      // {link:'Get started',path: 'start'},
+      // {link:'Services',path: 'services'},
+      // {link:'Features',path: 'features'},
     ];
+    
  
    return (
      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">  
