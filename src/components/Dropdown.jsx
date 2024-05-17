@@ -13,7 +13,7 @@ const Dropdown = () => {
   ];
 
   return (
-    <div className="relative flex flex-col items-center justify-center w-[200px] h-[24px] py-2 rounded-lg">
+    <div className="relative md:flex flex-col items-center justify-center w-[200px] h-[24px] py-2 rounded-lg">
       <button
         className="p-2  w-full  flex items-center justify-between text-base rounded-lg tracking-wider border-4 border-transparent active:border-t-brandPrimary duration-300 active:text-white"
         onClick={() => setIsOpen((prev) => !prev)}
@@ -32,6 +32,7 @@ const Dropdown = () => {
             <ul className="italic p-2 ">
               <Link to={item.path} spy={true} smooth={true} offset={-100} className=" hover:text-white text-bold cursor-pointer">{item.link}</Link>
              </ul>
+
           ))}
         </div>
       )}

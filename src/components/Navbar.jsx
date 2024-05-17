@@ -65,7 +65,9 @@ const Navbar = () => {
              navItems.map(({link, path}) => <Link key={path} spy={true} smooth={true} offset={-100} to={path} className="block cursor-pointer text-base text-grey900 hover:text-brandPrimary first:font-medium">{link}</Link> )
              }
          </ul>
+         <div className='hidden md:flex '>
          <Dropdown/>
+         </div>
          </div>
           
        
@@ -90,10 +92,11 @@ const Navbar = () => {
 
         {/* nav items for mobile devices */}
 
-        <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+        <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? "block h-screen fixed top-0 right-0 left-0" : "hidden"}`}>
         {
              navItems.map(({link, path}) => <Link key={path} spy={true} smooth={true} offset={-100} to={path} className="block text-white text-grey900 hover:text-brandPrimary first:font-medium">{link}</Link> )
              }
+             <Dropdown/>
     </div>
       </nav>
      </header>
