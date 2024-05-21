@@ -1,8 +1,8 @@
-import images from "./images";
+import images from "../src/constants/images";
 
 
 
-const collections = [
+const COLLECTIONS = [
   {
     id: 1,
     title: "Maize",
@@ -159,4 +159,4 @@ const features = [
       }
 ]
 
-export default {features, collections};
+export default COLLECTIONS;

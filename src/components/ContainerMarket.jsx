@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Menumarket from "./Menumarket";
+import { data } from "../constants";
 
 const ContainerMarket = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,6 +8,7 @@ const ContainerMarket = () => {
   const handleClick = () => setIsOpen(!isOpen);
 
   return (
+    
     <div className="max-w-screen-2xl md:h-screen bg-banner-pattern bg-cover">
       <div className=" md:relative px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-full bg-gradient-to-br from-green-950 to-tranparent">
         <div className="mt-20 text-center">
@@ -69,6 +71,8 @@ const ContainerMarket = () => {
             </button>
           </div>
         </div>
+
+        
 
         {isOpen ? <Menumarket /> : null}
       </div>

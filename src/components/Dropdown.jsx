@@ -4,6 +4,9 @@ import { Link } from "react-scroll";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [first, setfirst] = useState(false);
+
+ 
   const dropdownitems = [
     { link: "Our Solution", path: "solution" },
     { link: "How It Works", path: "works" },
