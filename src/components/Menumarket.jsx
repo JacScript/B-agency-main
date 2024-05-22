@@ -1,9 +1,7 @@
 import React from 'react'
 import MenuItem from './MenuItem';
-import { data } from '../constants/index';
-import COLLECTIONS from '../data'
 
-const Menumarket = (items) => {
+const Menumarket = ({items}) => {
  
   // console.log("Jackson");
   return (
@@ -59,21 +57,16 @@ const Menumarket = (items) => {
           </p>
         </a>
       </div> */}
-        {
-
-         
-        
-        console.log(items.title)
-        
-        // collections.items.map((item, id) => (
-        //           <MenuItem
-        //             key={item.id}
-        //             title={item.title}
-        //             imageUrl={item.imageUrl}
-        //           />
-        //         ))
-               }
-
+      {
+        <div>
+          <div className='flex'>
+            {items.map(item => (
+              <div>{item.title}</div>
+            ))}
+          </div>
+        </div>
+       
+      }
     </div>
   );
 }

@@ -3,12 +3,34 @@ import Menumarket from "./Menumarket";
 import { data } from "../constants";
 
 const ContainerMarket = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => setIsOpen(!isOpen);
+  // const handleClick = () => setIsOpen(!isOpen);
+
+    const [showDataOne, setShowDataOne] = useState(false);
+    const [showDataTwo, setShowDataTwo] = useState(false);
+    const [showDataThree, setShowDataThree] = useState(false);
+    const [showDataFour, setShowDataFour] = useState(false);
+    // const data = "This is the data to be shown";
+
+    const handleClickOne = () => {
+      setShowDataOne(!showDataOne)
+    }
+
+    const handlerClickTwo = () => {
+      setShowDataTwo(!showDataTwo)
+    }
+
+    const buttonThreeClick = () => {
+      setShowDataThree(!showDataThree)
+    }
+
+    const buttonFourClick = () => {
+      setShowDataFour(!showDataFour)
+    }
+
 
   return (
-    
     <div className="max-w-screen-2xl md:h-screen bg-banner-pattern bg-cover">
       <div className=" md:relative px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-full bg-gradient-to-br from-green-950 to-tranparent">
         <div className="mt-20 text-center">
@@ -21,7 +43,7 @@ const ContainerMarket = () => {
           <div className="ml-6">
             <button
               className="btn-primary flex items-center px-12"
-              onClick={handleClick}
+              onClick={handleClickOne}
             >
               <img
                 className="mr-2 h-6 w-6 rounded-full"
@@ -31,10 +53,11 @@ const ContainerMarket = () => {
               Grains
             </button>
           </div>
+
           <div>
             <button
               className="btn-primary flex items-center px-12"
-              onClick={handleClick}
+              onClick={handlerClickTwo}
             >
               <img
                 className="mr-4 h-6 w-6 rounded-full"
@@ -44,10 +67,11 @@ const ContainerMarket = () => {
               Grains
             </button>
           </div>
+
           <div className="ml-6">
             <button
               className="btn-primary flex items-center px-12"
-              onClick={handleClick}
+              onClick={buttonThreeClick}
             >
               <img
                 className="mr-4 h-6 w-6 rounded-full"
@@ -60,7 +84,7 @@ const ContainerMarket = () => {
           <div>
             <button
               className="btn-primary flex items-center px-12"
-              onClick={handleClick}
+              onClick={buttonFourClick}
             >
               <img
                 className="mr-4 h-6 w-6 rounded-full"
@@ -72,9 +96,49 @@ const ContainerMarket = () => {
           </div>
         </div>
 
-        
+        {showDataOne && (
+          <div className="flex">
+            {data.collections
+              .filter((collection, idx) => idx < 1)
+              .map(({ id, ...otherCollectionProps }) => (
+                <Menumarket key={id} {...otherCollectionProps} />
+              ))}
+          </div>
+        )}
 
-        {isOpen ? <Menumarket /> : null}
+        {showDataTwo && (
+          <div className="flex">
+            {data.collections
+              .filter((collection, idx) => 1 == idx)
+              .map(({ id, ...otherCollectionProps }) => (
+                <Menumarket key={id} {...otherCollectionProps} />
+              ))}
+          </div>
+        )}
+
+        {showDataThree && (
+          <div className="flex">
+             {data.collections
+              .filter((collection, idx) => 2 == idx )
+              .map(({id, ...otherCollectionProps}) => (
+                <Menumarket key={id} {...otherCollectionProps} />
+              ))
+              }
+          </div>
+        )}
+
+        {showDataFour && (
+          <div className="flex">
+            {data.collections
+              .filter((collection, idx) => 3 == idx )
+              .map(({id, ...otherCollectionProps}) => (
+                <Menumarket key={id} {...otherCollectionProps}/>
+              ))
+            }
+          </div>
+        )}
+
+        {/* {isOpen ? <Menumarket /> : null} */}
       </div>
     </div>
   );

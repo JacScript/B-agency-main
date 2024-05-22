@@ -11,7 +11,7 @@ const collections = [
     items: [
         {
             id: 1,
-            title: 'Maize',
+            title: 'Pumpkin',
             imgUrl: images.maize,
         },
         {
@@ -38,7 +38,7 @@ const collections = [
      items: [
         {
             id: 1,
-            title: 'Maize',
+            title: 'Cassava',
             imgUrl: images.maize,
         },
         {
@@ -66,7 +66,7 @@ const collections = [
     items: [
         {
             id: 1,
-            title: 'Maize',
+            title: 'Pineapple',
             imgUrl: images.maize,
         },
         {
@@ -94,7 +94,7 @@ const collections = [
     items: [
         {
             id: 1,
-            title: 'Maize',
+            title: 'Passion',
             imgUrl: images.maize,
         },
         {
