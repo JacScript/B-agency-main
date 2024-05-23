@@ -31,9 +31,9 @@ const ContainerMarket = () => {
 
 
   return (
-    <div className="max-w-screen-2xl md:h-screen bg-banner-pattern bg-cover">
+    <div className="max-w-screen-2xl md:h-screen bg-banner-pattern bg-cover mt-[74px]">
       <div className=" md:relative px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-full bg-gradient-to-br from-green-950 to-tranparent">
-        <div className="mt-20 text-center">
+        <div className="text-center">
           <h1 className="text-white text-4xl uppercase font-semibold pt-12">
             Select a product to Buy/Sell
           </h1>

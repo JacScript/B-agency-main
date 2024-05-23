@@ -8,6 +8,7 @@ import { data }  from '../constants/index'
 import { SiInstagram } from "react-icons/si";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from 'react-icons/bs';
+import { Link } from "react-router-dom";
 
 
 
@@ -56,11 +57,13 @@ const Banner = () => {
                <div className="mt-12 w-full h-72 absolute inset-0 px-8 gap-12 grid grid-cols-3 font-neutralGrey sm:max-lg:mt-8 sm:max-lg:grid sm:max-2xl:grid-cols-2">
 
                {data.collections.map((collection, id) => (
+                  <Link to="/market">
                   <MenuItem
                     key={collection.id}
                     title={collection.title}
                     imageUrl={collection.imageUrl}
                   />
+                  </Link>
                 ))
                }
 
