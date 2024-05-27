@@ -94,7 +94,7 @@ const Navbar = () => {
 
         <div className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? "block h-screen fixed top-0 right-0 left-0" : "hidden"}`}>
         {
-             navItems.map(({link, path}) => <Link key={path} spy={true} smooth={true} offset={-100} to={path} className="block text-white text-grey900 hover:text-brandPrimary first:font-medium">{link}</Link> )
+             navItems.map(({link, path}) => <Link key={path} spy={true} smooth={true} offset={-100} to={path} className="block text-white  hover:text-brandPrimary first:font-medium">{link}</Link> )
              }
              <Dropdown/>
     </div>

@@ -8,7 +8,9 @@ import Feature from '../components/Features.jsx';
 import MyFooter from '../components/MyFooter.jsx';
 import HowItWorks from '../components/HowItWorks.jsx';
 
-const Home = () => {
+const Home = (props) => {
+
+  console.log(props)
   return (
     <>
     <Navbar/>

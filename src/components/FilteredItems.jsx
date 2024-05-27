@@ -3,6 +3,7 @@ import React from "react";
 import maize from "../assets/corn.jpg";
 
 const FilteredItems = () => {
+  
   return (
     <div className="mt-[4.6rem] max-w-screen-2xl">
       <div className="w-5/6 mx-auto mt-24 flex ">

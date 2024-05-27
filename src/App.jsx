@@ -1,6 +1,8 @@
-import { Routes, Route} from 'react-router-dom'
+// import { Switch, Route} from 'react-router-dom'
+
 
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Market from './pages/Market.jsx';
 import SignUp from './pages/SignUp.jsx';
@@ -13,16 +15,17 @@ import Item from './pages/Item.jsx';
 import './App.css'
 
 function App() {
-    
+
   return (
-    <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='market' element={<Market/>} />
-      <Route path='sign-up' element={<SignUp/>} />
-      <Route path='log-in' element={<LogIn/>} />
-      <Route path='converter' element={<Converter/> } />
-      <Route path='item' element={<Item/>} />
-    </Routes>
+    
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route path='/market' component={Market} />
+      <Route path='/sign-up' component={SignUp} />
+      <Route path='/log-in' component={LogIn} />
+      <Route path='/converter' component={Converter} />
+      <Route path='/item' component={Item} />
+    </Switch>
   )
 }
 
